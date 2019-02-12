@@ -30,9 +30,11 @@ echo -e '\e[0;31m【!!】 This script need root permission\e[0m' 1>&2
 exit
 fi
 dir=`pwd`
-rm $dir/rm -rf output
-rm $dir/rm -rf \source
-rm $dir/rm -rf handler
+
+
+rm -rf $dir/output
+rm -rf $dir/source
+rm -rf $dir/handler
 mkdir $dir/output
 mkdir $dir/source
 mkdir $dir/handler
